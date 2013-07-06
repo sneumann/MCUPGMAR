@@ -74,13 +74,13 @@ $(SCRIPTS_DIR)/install_path.mk: FORCE
 	echo "export INSTALL_PATH := "`pwd` > $@
 
 install_util: 
-	@echo "==== extracting $(CLUSTERING_UTIL_DIR) sources (external merging programs)"
-	tar -xvzf  $(CLUSTERING_UTIL_DIR).tar.gz
+	#@echo "==== extracting $(CLUSTERING_UTIL_DIR) sources (external merging programs)"
+	#tar -xvzf  $(CLUSTERING_UTIL_DIR).tar.gz
 	@echo "==== compiling $(CLUSTERING_UTIL_DIR) sources using external Makefile ($(CLUSTERING_UTIL_DIR)/Makefile) recursively "
 	$(MAKE) -C $(CLUSTERING_UTIL_DIR)  -f Makefile mcupgma_install
 install_clustering: 
-	@echo "==== extracting $(CLUSTERING_DIR) sources (code for a round of MC-UPGMA clustering)"
-	tar -xvzf  $(CLUSTERING_DIR).tar.gz
+	#@echo "==== extracting $(CLUSTERING_DIR) sources (code for a round of MC-UPGMA clustering)"
+	#tar -xvzf  $(CLUSTERING_DIR).tar.gz
 	@echo "==== compiling $(CLUSTERING__DIR) sources using external Makefile ($(CLUSTERING_DIR)/Makefile) recursively "
 #	$(MAKE) -C $(CLUSTERING_DIR)  -f Makefile $(CLUSTERING_DIR_BIN)/hierarchical_clustering
 	$(MAKE) -C $(CLUSTERING_DIR)  -f Makefile
