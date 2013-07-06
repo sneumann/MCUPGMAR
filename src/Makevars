@@ -1,0 +1,21 @@
+OBJECTS=\
+./clustering_util/ClusteringUtil.o \
+./clustering_util/Tree.o \
+./clustering_round/HierarchicalClustering_with_unknown_edges.o \
+./clustering_round/test_heap.o 
+
+#./clustering_round/HierarchicalClustering_main.cmdline.o \
+#./clustering_round/HierarchicalClustering_main.o \
+#./clustering_util/HashingMergerMain.cmdline.o \
+#./clustering_util/EdgeCollatorMain.cmdline.o \
+#./clustering_round/test_heap.cmdline.o
+
+## Use the R_HOME indirection to support installations of multiple R version
+PKG_CPPFLAGS=-I clustering_round  -I clustering_util
+
+all: clean $(SHLIB)
+
+clean:
+	rm -f $(OBJECTS)
+	find . -name \*~ -exec rm {} \;   ## from cleanup
+	find . -name \*.o -exec rm {} \;  ## from cleanup
