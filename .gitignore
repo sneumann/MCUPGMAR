@@ -1,0 +1,20 @@
+# editor backup files
+*~
+\#*\#
+
+# compiled code
+*.o
+*.so
+*.dll
+*.a
+
+# SVN stuff
+.svn
+
+# RUnit generated stuff
+inst/unitTests/report*
+
+# Directories created from the original C++ package
+src/clustering_round/bin.x86_64_Linux/
+src/clustering_round/dep.x86_64_Linux/
+src/clustering_util/bin.x86_64_Linux/

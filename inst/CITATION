@@ -1,0 +1,16 @@
+citHeader("To cite the MCUPGMAR package in publications use:")
+
+
+citEntry(entry="article",
+  author="Loewenstein Y, Portugaly E, Fromer M, Linial M.",
+  title="Efficient algorithms for accurate hierarchical clustering of huge datasets: tackling the entire protein space.",
+  journal="BIOINFORMATICS",
+  year="2008",
+  volume="24",
+  pages="i41-i49",
+  textVersion = paste("Loewenstein Y, Portugaly E, Fromer M, Linial M."
+  	"Efficient algorithms for accurate hierarchical ",
+	"clustering of huge datasets: tackling the entire protein space.",
+	"Bioinformatics 2008 24: i41-i49;"))	
+
+citFooter("The actual R package has no associated publication yet.")

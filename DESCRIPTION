@@ -1,0 +1,17 @@
+Package: MCUPGMAR
+Version: 0.1.0
+Date: 2013-07-06
+Title: Accurate hierarchical clustering for huge data
+Author: Loewenstein Y <yaniv100@gmail.com>,
+	Corey Broeckling <Corey.Broeckling@ColoState.EDU>,
+	Steffen Neumann <sneumann@ipb-halle.de>
+Maintainer: Steffen Neumann <sneumann@ipb-halle.de>,
+	Corey Broeckling <Corey.Broeckling@ColoState.EDU>
+Depends: R (>= 3.0.0)
+Description: The MC-UPGMA (Memory Constrained UPGMA) framework allows
+	accurate hierarchical clustering of huge data, i.e. too large to fit into
+	memory for conventional clustering algorithms. 
+License: GPL (>= 3)
+URL: http://www.protonet.cs.huji.ac.il/mcupgma/
+biocViews: Clustering
+
